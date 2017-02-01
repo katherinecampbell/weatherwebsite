@@ -1,0 +1,205 @@
+/* all colors used in this document were found using htmlcolorcodes.com*/
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #B9FC97;
+}
+
+/* The following idea for the structure of the code (both a container and a content div), as well as how to execute it was inspired by http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers courtasy of users sticks464 and Mr Alien*/
+
+#container{
+    background-color:#FCFBE3;
+    position:relative;
+    top: 20%;
+    left: 4%;
+    width: 92%;
+    margin-top: -450px;
+    height: 100%;
+ 
+    /*below box shadow code found at http://stackoverflow.com/questions/6821295/add-css-box-shadow-around-the-whole-div courtasy of user: BoltClock. Colors used were suggested by user Proyanka Thakur*/
+
+    -moz-box-shadow: 0 0 3px #ccd;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.75);
+    box-shadow: 0 0 3px rgba(0,0,0,0.75)
+}
+
+#content {
+    padding-top:1%;
+    padding-bottom: 1%;
+    width:97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 450px;
+    height: 100%;
+    position:relative;
+}
+
+/* The Titilluim Web font, links, and instructions as to how to use it on my personal website was found at https://fonts.google.com/specimen/Titillium+Web?selection.family=Titillium+Web*/
+
+#welcomeheader{
+    position: relative;
+    margin: -.5%;
+    text-align: center;
+    font-size: 48pt;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#welcomeparagraph {
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: -.5%;
+}
+
+#center{
+    padding: 3%;
+    margin-left: 7%;
+    margin-top: -1%;
+    width: 80%;
+    position: relative;
+}
+
+
+.dropdown {
+    background-color: #8FD8D8;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 23%;
+    margin-left: 24%;
+    margin-right: 5%;
+    border-radius: 25px;
+    border: 3px solid #60B874;
+    padding: 10px;
+    float:left;
+    
+}
+
+/*some of the following code was designed and taken from the CSS button generator by Steven Wanderski at http://css3buttongenerator.com/ */
+
+.btnsubmit {
+  background: #e4ecf2;
+  background-image: -webkit-linear-gradient(top, #e4ecf2, #608a60);
+  background-image: -moz-linear-gradient(top, #e4ecf2, #608a60);
+  background-image: -ms-linear-gradient(top, #e4ecf2, #608a60);
+  background-image: -o-linear-gradient(top, #e4ecf2, #608a60);
+  background-image: linear-gradient(to bottom, #e4ecf2, #608a60);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 12px 4px 12px;
+  border: solid #60B874 2px;
+    width: 25%;
+    margin-left: 37%
+    
+}
+
+.btnsubmit:hover {
+  background: #49a8e3;
+  background-image: -webkit-linear-gradient(top, #49a8e3, #51b853);
+  background-image: -moz-linear-gradient(top, #49a8e3, #51b853);
+  background-image: -ms-linear-gradient(top, #49a8e3, #51b853);
+  background-image: -o-linear-gradient(top, #49a8e3, #51b853);
+  background-image: linear-gradient(to bottom, #49a8e3, #51b853);
+cursor: pointer;
+}
+
+
+/*some of the following CSS for the detail buttons was developed utilizing a button designer courtasy of the CSS Button Generator at http://www.bestcssbuttongenerator.com/#/22*/
+
+.detailbtn {
+	-moz-box-shadow:inset 0px 0px 0px 0px #dcecfb;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #dcecfb;
+	box-shadow:inset 0px 0px 0px 0px #dcecfb;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c8e1fa), color-stop(1, #82a7cc));
+	background:-moz-linear-gradient(top, #c8e1fa 5%, #82a7cc 100%);
+	background:-webkit-linear-gradient(top, #c8e1fa 5%, #82a7cc 100%);
+	background:-o-linear-gradient(top, #c8e1fa 5%, #82a7cc 100%);
+	background:-ms-linear-gradient(top, #c8e1fa 5%, #82a7cc 100%);
+	background:linear-gradient(to bottom, #c8e1fa 5%, #82a7cc 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8e1fa', endColorstr='#82a7cc',GradientType=0);
+	background-color:#c8e1fa;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:1px solid #7999b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#585C5E;
+	font-family:'Titillium Web', sans-serif;
+	font-size:15px;
+	padding:0px 6px;
+	text-shadow:0px 1px 0px #54a6cc;
+}
+
+.detailbtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #82a7cc), color-stop(1, #c8e1fa));
+	background:-moz-linear-gradient(top, #82a7cc 5%, #c8e1fa 100%);
+	background:-webkit-linear-gradient(top, #82a7cc 5%, #c8e1fa 100%);
+	background:-o-linear-gradient(top, #82a7cc 5%, #c8e1fa 100%);
+	background:-ms-linear-gradient(top, #82a7cc 5%, #c8e1fa 100%);
+	background:linear-gradient(to bottom, #82a7cc 5%, #c8e1fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#82a7cc', endColorstr='#c8e1fa',GradientType=0);
+	background-color:#82a7cc;
+}
+
+.detailbtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+table {
+margin-top: 3%;
+color: #333;
+font-family: 'Titillium Web', sans-serif;
+width: 80%;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th {
+border: 1px solid transparent; /* No more visible border */
+height: 5%;
+width: 20%;
+padding: 2%
+}
+
+th {
+background: #9EE284; /* Darken header a bit */
+font-weight: bold;
+}
+
+td {
+text-align: center;
+}
+
+tr:nth-child(even) td { background: #E4F2FA; }
+
+tr:nth-child(odd) td { background: #FCFBE3; }
+
+#blankspace {
+    margin: 5%;
+}
+
+.checkbox {
+    background-color: #8FD8D8;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 23%;
+    display:inline-block; 
+    margin-left: auto;
+    margin-right: 20%;
+    border-radius: 25px;
+    border: 3px solid #60B874;
+    padding: 12px;
+}
+

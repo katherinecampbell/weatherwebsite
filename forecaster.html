@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>forecaster.html</title>
+<link rel="stylesheet" type="text/css" href="forecasterstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<script rel="javascript" src="forecasterjs.js"></script>
+    </head>      
+    
+    <body>
+        
+        <div id="container">
+            
+            <div id="content">
+                
+                <h1 id="welcomeheader"> Welcome to the Forecaster!</h1>
+                
+                <p id="welcomeparagraph">Welcome to the forecast website.  The aim of this website is to give you the most up-to-date information about the weather in Dublin, Ireland in both text and graphic format.
+                <br><br>
+                To get started, just choose from the drop down menu how many days you'd like to forecast!</p>
+                
+                <!-- Directions concerning how to embed a map or image from google maps were found at https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en-->
+                
+                <iframe id="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740230.3521173466!2d-9.162660904927508!3d52.95964414444509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1477664899712" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                <!-- code for how to make check boxes courtasy of W3 schools at http://www.w3schools.com/html/html_form_input_types.asp
+                code how to create pre-checked boxes courtasy of W3 schools at 
+                http://www.w3schools.com/TAgs/att_input_checked.asp-->
+                
+               <div class="dropdown">
+                   <form>
+                     How Many Days Shall We Forecast?
+                       <select id="day">
+                        <option type="number">1</option>
+                        <option type="number">2</option>
+                        <option type="number">3</option>
+                        <option type="number">4</option>
+                        <option type="number">5</option>
+                        </select>
+                       </form>
+                       <button  class="btnsubmit" onclick="parsedaily();" >submit</button>    
+                </div>
+                
+                <div class="checkbox">
+                <form>
+                    <input type="checkbox" onclick="showhide(7,pressure)" name="pressure" value="pressure" checked/> show pressure <br/>
+                    <input type="checkbox" onclick="showhide(5,humidity)" name="humidity" value="humidity" checked/> show humidity <br/> 
+                    <input type="checkbox" onclick="showhide(6,speed)" name="speed" value="speed" checked/> show windspeed <br/>
+                </form>
+                </div>
+                <!--how to make columns disappear by using the col tag. Code from Stackoverflow.com from user Fabrico Matte. http://stackoverflow.com/questions/10731693/javascript-hide-column-by-default -->
+
+                <table align="center" id="weather" ></table>
+                <div id="blankspace"></div>
+                <table align="center" id="detailedweather"></table>
+            </div>
+            
+        </div>
+        
+        
+    
+    </body>
+    </html>
